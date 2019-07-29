@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8"/>
+    <title>Registration Form</title>
+            
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/NYSL_3.css"/>
+</head>
+            
+<body>
+    
+    <header class="header_container">
+
+        <img id="logo" class="logo" src="./img/nysl_logo.png" alt="NYSL logo"/>
+                
+        <div class="nav_title_socilas_container">
+            <div class="title_socials_container">
+                <h1 class="title">Northside Youth Soccer League</h1>
+                <section class="socials">
+                    <a href="./social_media.html" class="fa fa-facebook"> </a>
+                    <a href="./social_media.html" class="fa fa-twitter"> </a>
+                    <a href="./social_media.html" class="fa fa-instagram"> </a>
+                    <a href="./social_media.html" class="fa fa-youtube"> </a>    
+                </section>
+            </div>
+                    
+            <nav class="navigation">
+                <ul class="navbar">
+                    <li class="nav"><a class="active" href="./index.html">Home</a></li>
+                    <li class="nav"><a href="./about.html">About</a></li>
+                    <li class="nav"><a href="./contact.html">Contact us</a></li>
+                    <li class="nav"><a href="./schedule.html">Game information</a></li>
+                    <li class="nav"><a href="./media.html">Media</a></li>
+                    <li class="nav"><a href="./rules.html">Rules & Policies</a></li>
+                    <li class="regist nav"><a href="./registration_form.html">Registration form</a></li>
+                </ul>
+                            
+            </nav>
+              
+    </header>
+
+    <h2 class="centertittle">Registration Form</h2>
+
+    <form class="form_container" action="./show_data.html" method="GET">
+
+        <fieldset class="personal_info">
+            <legend><span>Personal Information</span></legend>
+            <div class="personal_line">
+                <div class="linefirstside">
+                    Player's First Name: <input type="text" name="firstname">
+                </div>
+                <div class="linesecondside">
+                    Last Name: <input type="text" name="lastname">
+                </div>
+                    
+            </div>
+            <div class="personal_line">
+                Street Address: <input type="text" name="address">
+            </div>
+            <div class="personal_line">
+                <div class="linefirstside">
+                    City: <input type="text" name="city">
+                </div>
+                <div class="linesecondside">
+                    Zip Code: <input type="text" name="zipcode">
+                </div>
+                
+            </div>
+            <div class="personal_line">
+                <div class="linefirstside">
+                    Birth Date (mm/dd/yyyy): <input type="date" name="birthday">
+                </div>
+                <div class="linesecondside">
+                    Gender: <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                    <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                </div>    
+            </div>
+            <div class="personal_line">
+                Grade: <input type="radio" name="grade" id="pre-school" value="pre-school"><label for="pre-school">Pre-school</label>
+                <input type="radio" name="grade" id="1st" value="1st"><label for="1st">1st</label>
+                <input type="radio" name="grade" id="2nd" value="2nd"><label for="2nd">2nd</label>
+                <input type="radio" name="grade" id="3rd" value="3rd"><label for="3rd">3rd</label>
+                <input type="radio" name="grade" id="4th" value="4th"><label for="4th">4th</label>
+                <input type="radio" name="grade" id="5th" value="5th"><label for="5th">5th</label>
+            </div>
+            <div class="personal_line">
+                Parent/Guardian: <input type="text" name="parent_or_guardian">
+            </div>
+            <div class="personal_line">
+                <div class="linefirstside">
+                    Contact Phone: <input type="text" name="phone">
+                </div>
+                <div class="linesecondside">
+                    Contact Email: <input type="text" name="email">
+                </div>
+            </div>
+
+        </fieldset>
+
+        <div class="schools formchild">
+            <p class="ntext"><span>Which elementary school do you live near?</span></p>
+            <div class="schooloptions">
+                First Closest School:
+                    <select name="firstschool">
+                        <option value selected disabled>Please select a school</option>
+                        <option value="AJ_Katzenmaier">AJ Katzenmaier</option>
+                        <option value="Marjorie_P_Hart">Marjorie P Hart</option>
+                        <option value="Greenbay">Greenbay</option>
+                        <option value="North_Elementary">North Elementary</option>
+                        <option value="Howard_A_Yeager">Howard A Yeager</option>
+                        <option value="South_Elementary">South Elementary</option>
+                    </select>
+                Second Closest School:
+                <select name="secondschool">
+                    <option value selected disabled>Please select a school</option>
+                    <option value="AJ_Katzenmaier">AJ Katzenmaier</option>
+                    <option value="Marjorie_P_Hart">Marjorie P Hart</option>
+                    <option value="Greenbay">Greenbay</option>
+                    <option value="North_Elementary">North Elementary</option>
+                    <option value="Howard_A_Yeager">Howard A Yeager</option>
+                    <option value="South_Elementary">South Elementary</option>
+                </select>
+            </div>
+   
+        </div>
+        
+        <table class="checkli">
+            <caption><span>What position(s) do you normally play?</span> (check all that apply)</caption>
+            <tr>
+                <td><input type="checkbox" name="playposition" id="forward" value="forward"><label for="forward">Forward</label></td>
+                <td class="rightside"><input type="checkbox" name="playposition" id="midfield" value="midfield"><label for="midfield">Mieldfield</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="playposition" id="defence" value="defence"><label for="defence">Defence</label></td>
+                <td class="rightside"><input type="checkbox" name="playposition" id="goalkeeper" value="goalkeeper"><label for="goalkeeper">Goalkeeper</label></td>
+            </tr>
+        </table>
+
+        <table class="checkli">
+                <caption><span>What position(s) do you want to play?</span> (check all that apply)</caption>
+                <tr>
+                    <td><input type="checkbox" name="likedposition" id="forward2" value="forward"><label for="forward2">Forward</label></td>
+                    <td class="rightside"><input type="checkbox" name="likedposition" id="midfield2" value="midfield"><label for="midfield2">Mieldfield</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="likedposition" id="defence2" value="defence"><label for="defence2">Defence</label></td>
+                    <td class="rightside"><input type="checkbox" name="likedposition" id="goalkeeper2" value="goalkeeper"><label for="goalkeeper2">Goalkeeper</label></td>
+                </tr>
+            </table>
+    
+        <br><p class="ntext"><input type="radio" name="jersey" id="uniform" value="yes"><label for="uniform"><span>Already Have a Uniform</span></label></p>
+        <br><b>Jersey Size:</b> 
+        <br><input type="radio" name="jerseysize" id="jYS" value="YS"><label for="jYS">Youth Small</label>
+            <input type="radio" name="jerseysize" id="jYM" value="YM"><label for="jYM">Youth Medium</label>
+            <input type="radio" name="jerseysize" id="jYL" value="YL"><label for="jYL">Youth Large</label>
+            <input type="radio" name="jerseysize" id="jsmall" value="small"><label for="jsmall">Small</label>
+            <input type="radio" name="jerseysize" id="jmedium" value="medium"><label for="jmedium">Medium</label>
+            <input type="radio" name="jerseysize" id="jlarge" value="large"><label for="jlarge">Large</label>
+            <input type="radio" name="jerseysize" id="jextra-large" value="extra-large"><label for="jextra-large">Extra Large</label>
+        <br><br><b>Shorts Size:</b> 
+        <br><input type="radio" name="shortsize" id="sYS" value="YS"><label for="sYS">Youth Small</label>
+            <input type="radio" name="shortsize" id="sYM" value="YM"><label for="sYM">Youth Medium</label>
+            <input type="radio" name="shortsize" id="sYL" value="YL"><label for="sYL">Youth Large</label>
+            <input type="radio" name="shortsize" id="ssmall" value="small"><label for="ssmall">Small</label>
+            <input type="radio" name="shortsize" id="smedium" value="medium"><label for="smedium">Medium</label>
+            <input type="radio" name="shortsize" id="slarge" value="large"><label for="slarge">Large</label>
+            <input type="radio" name="shortsize" id="sextra-large" value="extra-large"><label for="sextra-large">Extra Large</label>
+        <br><br><p>Permission to Play</p>
+        <p class="ntext formtext">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+                Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+                accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+                employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+                on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+                sponsored activities, which transportation.</p>
+        <br><p class="ntext formtext">By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+                cancellation policy and agree to its terms.</p>
+        <br>Parent/Guardian Signature <input type="text" name="signature"/>
+            Date <input type="date" name="date">
+
+        <div class="subbutton">
+            <input type="submit" value="submit">
+
+        </div>
+        
+
+
+
+    </form>
+
+</body>
+
+</html>

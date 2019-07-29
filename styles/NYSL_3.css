@@ -1,0 +1,390 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{font-family: "Avant Garde", "Century Gothic", sans-serif;
+        background-color: #F2F2F2
+}
+
+span{font-weight: bold
+}
+
+/*new header*/
+
+.header_container{display: flex;
+    background-color: #033540;
+    height:105px;
+    position: sticky;
+    top:0;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+
+.logo{height: auto;
+    width: 7%;
+    background-color: #F2F2F2;
+    border-width: 5px 3px 5px 3px ;
+    border-color: #F2F2F2;
+    border-style: solid;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 0px;
+    border-bottom-left-radius: 42.8%;
+    border-bottom-right-radius: 42%;
+    object-fit: contain
+}
+
+.nav_title_socilas_container{display:flex;
+    background-color: #F2F2F2;
+    flex-grow: 1;
+    flex-direction: column;
+
+}
+
+/*nav bar*/
+
+.navigation{display:flex;
+     background-color:#033540;
+     height: 38%;
+     display: flex;
+}
+
+.navbar{width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+ul:not(.ulist){list-style-type: none;
+    overflow: hidden;
+    background-color: #033540
+    }
+    
+    ul li.regist{ background-color: #60A63F
+    }
+
+    .nav a{display: block;
+        color: #F2F2F2;
+        text-align: center;
+        text-decoration: none;
+        padding:9.5px 16px;
+    }
+    .nav a:hover:not(.active)  {
+            background-color: #031e24;
+          }
+    a.active{background-color: #085a6d
+    }
+
+/*end of nav bar*/
+
+.title_socials_container{display: flex;
+    justify-content: space-around;
+    height: 62%;
+    
+}
+
+.title{width: 70%;
+    align-self: center;
+}
+
+/*social media "bar"*/
+
+.socials{ align-self: center;
+}
+
+.fa {padding: 10px;
+    font-size: 22px;
+    width: 28px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.fa:hover {opacity: 0.7;
+}
+
+.fa-facebook {background: #3B5998;
+            color: white;
+  }
+  
+.fa-twitter {background: #55ACEE;
+            color: white;
+  }
+
+.fa-youtube { background: #bb0000;
+            color: white;
+  }
+
+.fa-instagram {background: #125688;
+            color: white;
+  }
+/*end of social media*/
+
+/*end of header*/
+
+main{margin-left:80px;
+    padding-top: 20px;
+}
+
+h3{margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 20px
+} 
+
+h4{margin-top: 20px}
+
+p{margin-top: 5px
+}
+
+p:not(.justtext):not(.sidenote):not(.ntext):not(.footnote) {text-decoration: underline
+}
+
+/*Home page*/
+
+main.index_container{display:flex;  
+}
+
+.index_main{display:flex;
+    flex-flow: column wrap;
+    width: 70%;
+}
+
+
+.index_side{display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    align-content: center;
+}
+
+
+.justtext {margin-left: 11px;
+            margin-bottom: 20px
+        } 
+
+/*About page*/
+
+main.about_container{display: flex;
+    padding-right: 2.5%;
+}
+
+.about_main{width: 70%;
+padding-right: 5%}
+
+.pframe{height: auto;
+    width: auto;
+    border: 2px ridge #A2F229;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+
+/*media page*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    box-sizing: border-box;
+  }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+  }
+
+/*end of media page*/
+
+/*Rules page css*/
+
+.container{ width:75%;
+    text-align: justify;
+}
+
+.sidenote{ font-style: italic
+}
+
+div.ulist{ margin-top:15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+div.fifa{ width: 100%;
+}
+
+ul.ulist{margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-position: inside;
+    list-style-type: square;
+    margin-left: 25px;
+}
+
+ol{margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 15px;
+list-style-position: outside
+}
+
+ol.fifa {margin-left: 32px
+}
+
+ol.fields {list-style-type: lower-roman;
+    margin-left: 32px
+}
+
+li.add_on{ list-style-type: circle;
+    margin-left: 32px;
+}
+
+li:not(.nav){margin-bottom: 5px
+}
+
+/*Schedule page css*/
+
+h2{margin:auto;}
+
+.tables_container{display: flex;
+    flex-flow: column wrap;
+    padding-top: 2%;}
+
+table{width: 80%;
+    margin: auto;
+    table-layout: fixed;
+}
+
+caption{padding:5px;
+    text-align: left
+}
+
+td{text-align: center
+}
+
+th, td {padding: 5px 20px 10px 15px;      
+}
+
+td.date{vertical-align: top;
+}
+
+th{text-decoration: underline;
+}
+
+table, th, td{ border-collapse: collapse;
+}
+
+table.locations tr:nth-child(even) {background-color: rgba(174, 242, 73, 0.219)}
+
+table.locations tr:nth-child(odd) {background-color: rgba(162, 242, 41, 0.363)}
+
+.foot{margin:auto;
+}
+
+
+/*Registration form*/
+
+.centertittle{text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+form {border-spacing: 20px;
+    width: 88%;
+    margin-top:25px;
+    margin-left: 80px;
+}
+.formchild{display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px;
+}
+
+fieldset {border: 2px solid #60A63F;
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.personal_line {display: flex;
+    margin: 10px 0px 10px 0px;
+}
+.linefirstside {width: 50%
+}
+.linesecondside{flex-grow: 1
+}
+
+.linefirstside>input[name="firstname"] {width: 70%
+}
+.linesecondside>input[name="lastname"]{width: 74%
+}
+div>input[name="address"]{width: 85%
+}
+div>input[name="parent_or_guardian"]{width:83.2%
+}
+.linefirstside>input[name="city"]{width:89%;
+}
+.linesecondside>input[name="zipcode"]{width: 76%
+}
+.linefirstside>input[name="birthday"]{width: 61.3%
+}
+.linefirstside>input[name="phone"]{width: 73.6%
+}
+.linesecondside>input[name="email"]{width:69.2%}
+
+.schools
+
+legend {padding: 0px 10px 2.5px 10px;
+    margin-left: 10px;
+}
+
+input{background-color: #F2F2F2;
+    padding: 2.5px 2.5px;
+    border: none;
+    border-bottom: 2px solid #033540;
+    outline: none;}
+   
+
+select {background-color: #F2F2F2;
+    border: 2px solid #033540;
+    outline:none;
+    margin:10px 45px 5px 0px;
+    width: 20%;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.formtext{font-style: italic;
+    font-size: 0.8em;
+}
+
+input[type=submit] {
+    background-color: rgb(125, 187, 31);
+    color: #F2F2F2;
+    padding: 11px 11px;
+    width: 9%;
+    font-size: 1.05em;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color:#AEF249;
+  }
+
+.rightside{text-align: start}
+
+.subbutton{display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+ 
+
+
+
+
